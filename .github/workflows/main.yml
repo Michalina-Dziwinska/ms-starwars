@@ -71,8 +71,8 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v1.6
         env:
-        GITHUB_TOKEN: ${{ secrets.<nazwa sekretu> }}
-        SONAR_TOKEN: ${{ secrets.<nazwa sekretu> }}
+        GITHUB_TOKEN: ${{ secrets.<TOKEN_SONAR> }}
+        SONAR_TOKEN: ${{ secrets.<TOKEN_GIT> }}
         with:
         args: >
       - Dsonar.organization=<Michalina-Dziwinska_ms-starwars>
