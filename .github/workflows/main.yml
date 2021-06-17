@@ -67,3 +67,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v1.6
+        env:
+        GITHUB_TOKEN: ${{ secrets.<nazwa sekretu> }}
+        SONAR_TOKEN: ${{ secrets.<nazwa sekretu> }}
+        with:
+        args: >
+      - Dsonar.organization=<Michalina-Dziwinska_ms-starwars>
+      - Dsonar.projectKey=<michalina-dziwinska>
+        projectBaseDir: ./
