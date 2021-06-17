@@ -48,7 +48,7 @@ jobs:
         uses: dependency-check/Dependency-Check_Action@main
         id: Depcheck
         with:
-          project: 'ms-starwars'
+          project: 'ms-star-wars'
           path: '.'
           format: 'HTML'
           others: ''
@@ -75,6 +75,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.TOKEN_SONAR }}
         with:
           args: >
-           -Dsonar.organization=Michalina-Dziwinska_ms-starwars
-            -Dsonar.projectKey=michalina-dziwinska
+           -Dsonar.organization=michalina-dziwinska
+            -Dsonar.projectKey=ms-star-wars
           projectBaseDir: ./
