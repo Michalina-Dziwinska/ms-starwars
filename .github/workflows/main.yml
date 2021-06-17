@@ -71,10 +71,10 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v1.6
         env:
-        GITHUB_TOKEN: ${{ secrets.<TOKEN_SONAR> }}
-        SONAR_TOKEN: ${{ secrets.<TOKEN_GIT> }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN_GIT }}
+          SONAR_TOKEN: ${{ secrets.TOKEN_SONAR }}
         with:
-        args: >
-      - Dsonar.organization=<Michalina-Dziwinska_ms-starwars>
-      - Dsonar.projectKey=<michalina-dziwinska>
-        projectBaseDir: ./
+          args: >
+           -Dsonar.organization=Michalina-Dziwinska_ms-starwars
+            -Dsonar.projectKey=michalina-dziwinska
+          projectBaseDir: ./
