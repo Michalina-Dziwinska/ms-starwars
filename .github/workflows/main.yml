@@ -36,6 +36,15 @@ jobs:
       # zad 8
       - name: integration-test
         run : npm run integration-tests
+        
+      # zad 9
+      - name: Test Report unit
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: mocha Tests unit
+          path: ./test-results.json
+          reporter: mocha-json
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
