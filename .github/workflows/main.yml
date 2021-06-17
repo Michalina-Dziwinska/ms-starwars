@@ -27,7 +27,7 @@ jobs:
       
       # zad 6 
       - name: Install
-      run: npm install
+        run: npm install
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
