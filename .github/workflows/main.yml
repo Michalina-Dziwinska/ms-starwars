@@ -32,6 +32,10 @@ jobs:
       # zad 7
       - name: integration-test
         run : npm run integration-tests
+        
+      # zad 8
+      - name: integration-test
+        run : npm run integration-tests
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
